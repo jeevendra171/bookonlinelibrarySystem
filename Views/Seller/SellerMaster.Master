@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SellerMaster.master.cs" Inherits="OnlineBookStore.Views.Seller.SellerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <style>
+        * {
+            font-family: Poppins;
+        }
+
+        #left {
+            color: white;
+            height: 69px;
+            background-color: teal;
+        }
+
+        lable {
+            color: white;
+        }
+    </style>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class=" container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+                <div style="height: 120px">
+                </div>
+                <div class="p-2">
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/Books1.jpeg" height="20" width="20" />
+                        <a href="#">
+                            <label>Billing</label></a>
+                    </div>
+                    <%--<div class="mb-3">
+                       <img src="../../Assets/Images/Book.jpeg"  height="20" width="20" />
+                        <a href="#">
+                            <label>Books</label></a>
+                    </div>--%>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/UserTyping.jpeg" height="20" width="20" />
+                        <a href="Authors.aspx">
+                            <label>Authors</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/Seller.png" height="20" width="20" />
+                        <a href="#">
+                            <label>Sellers</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/Catagries.jpeg" height="20" width="20" />
+                        <a href="#">
+                            <label>Catogries</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/userLogin.jpeg" height="20" width="20" />
+                        <a href="../Login.aspx">
+                            <label>Logout</label></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-10">
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>
